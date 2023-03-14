@@ -20,7 +20,7 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.marvin_elsen.better_snow.BetterSnowMod"
+        "value": "com.marvin_elsen.better_snow.BetterSnowModKt::init"
       }
     ]
   },
