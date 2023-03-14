@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${modVersion}",
+  "name": "Fabric Kotlin Mod Template",
+  "description": "This is a template! Use it to implement your own Fabric mod in Kotlin!",
+  "authors": [
+    "Firstname Lastname"
+  ],
+  "contact": {
+    "email": "email@example.com",
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/username/modname.git",
+    "issues": "https://github.com/username/modname/issues"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.example.template.TemplateMod"
+      }
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+  "depends": {
+    "java": ">=${javaVersion}",
+    "minecraft": "${minecraftVersion}",
+    "fabricloader": ">=${fabricLoaderVersion}",
+    "fabric-api": ">=${fabricApiVersion}",
+    "fabric-language-kotlin": ">=${fabricLanguageKotlinVersion}"
+  }
+}
