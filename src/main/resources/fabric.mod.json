@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "better-snow",
   "version": "${modVersion}",
-  "name": "Fabric Kotlin Mod Template",
-  "description": "This is a template! Use it to implement your own Fabric mod in Kotlin!",
+  "name": "Better Snow",
+  "description": "Adds more snow and ice blocks.",
   "authors": [
-    "Firstname Lastname"
+    "Marvin Elsen"
   ],
   "contact": {
-    "email": "email@example.com",
-    "homepage": "https://example.com/",
-    "sources": "https://github.com/username/modname.git",
-    "issues": "https://github.com/username/modname/issues"
+    "email": "mods@marvin-elsen.com",
+    "homepage": "https://marvin-elsen.com/minecraft-mods/better-snow/",
+    "sources": "https://github.com/elsenm/better-snow.git",
+    "issues": "https://github.com/elsenm/better-snow/issues"
   },
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/better-snow/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.example.template.TemplateMod"
+        "value": "com.marvin_elsen.better_snow.BetterSnowMod"
       }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "better-snow.mixins.json"
   ],
   "depends": {
     "java": ">=${javaVersion}",

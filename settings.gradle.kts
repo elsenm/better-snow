@@ -1,5 +1,4 @@
-// TODO: Change the rootProject's name to your mod's name
-rootProject.name = "fabric-kotlin-mod-template"
+rootProject.name = "better-snow"
 
 pluginManagement {
     repositories {
@@ -15,7 +14,6 @@ pluginManagement {
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
-            // TODO: Double-check whether the Fabric versions are up-to-date
             version("minecraft", "1.19.3")
             version("yarn", "1.19.3+build.5")
             version("fabric-loader", "0.14.17")

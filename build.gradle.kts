@@ -1,13 +1,11 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-// TODO: Change the project's group and version
-group = "com.example"
+group = "com.marvin_elsen"
 version = "0.0.1+" + libs.versions.minecraft.get()
 
 val javaVersion = JavaVersion.VERSION_17
 
-// TODO: Double-check whether the Fabric Loom and Kotlin version are up-to-date
 plugins {
     java
     kotlin("jvm") version "1.8.10"
