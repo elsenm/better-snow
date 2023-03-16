@@ -1,5 +1,9 @@
 package com.marvin_elsen.better_snow
 
+import com.marvin_elsen.better_snow.builders.block
+import net.minecraft.block.Material
+import net.minecraft.item.ItemGroups
+import net.minecraft.sound.BlockSoundGroup
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -8,5 +12,23 @@ val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
 
 @Suppress("unused")
 fun init() {
-    LOGGER.info("Initializing Milky's Mod")
+    LOGGER.info("Initializing Better Snow")
+
+    BetterSnowItemGroup.init()
+    initBlocks()
+}
+
+fun initBlocks() {
+    LOGGER.debug("Initializing blocks")
+
+    block {
+        identifier(BetterSnowIdentifier("packed_snow_block"))
+        settings {
+            material(Material.SNOW_BLOCK)
+            strength(0.5f)
+            requiresTool()
+            sounds(BlockSoundGroup.SNOW)
+        }
+        itemGroup(ItemGroups.NATURAL)
+    }
 }
