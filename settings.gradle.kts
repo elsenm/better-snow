@@ -18,7 +18,7 @@ dependencyResolutionManagement {
             version("yarn", "1.19.4+build.1")
             version("fabric-loader", "0.14.17")
             version("fabric-api", "0.76.0+1.19.4")
-            version("fabric-language-kotlin", "1.9.1+kotlin.1.8.10")
+            version("fabric-language-kotlin", "1.9.2+kotlin.1.8.10")
 
             library("minecraft", "com.mojang", "minecraft").versionRef("minecraft")
             library("yarn", "net.fabricmc", "yarn").versionRef("yarn")
