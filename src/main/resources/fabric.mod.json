@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "better-snow",
+  "id": "better_snow",
   "version": "${modVersion}",
   "name": "Better Snow",
   "description": "Adds more snow and ice blocks.",
@@ -14,7 +14,7 @@
     "issues": "https://github.com/elsenm/better-snow/issues"
   },
   "license": "MIT",
-  "icon": "assets/better-snow/icon.png",
+  "icon": "assets/better_snow/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,7 +25,7 @@
     ]
   },
   "mixins": [
-    "better-snow.mixins.json"
+    "better_snow.mixins.json"
   ],
   "depends": {
     "java": ">=${javaVersion}",
