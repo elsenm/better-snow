@@ -1,5 +1,6 @@
 package com.marvin_elsen.better_snow
 
+import com.marvin_elsen.better_snow.builders.Block
 import com.marvin_elsen.better_snow.builders.block
 import net.minecraft.block.Material
 import net.minecraft.item.ItemGroups
@@ -23,6 +24,18 @@ fun initBlocks() {
 
     block {
         identifier(BetterSnowIdentifier("packed_snow_block"))
+        settings {
+            material(Material.SNOW_BLOCK)
+            strength(0.5f)
+            requiresTool()
+            sounds(BlockSoundGroup.SNOW)
+        }
+        itemGroup(ItemGroups.NATURAL)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("packed_snow_slab"))
+        type(Block.Type.SLAB)
         settings {
             material(Material.SNOW_BLOCK)
             strength(0.5f)
