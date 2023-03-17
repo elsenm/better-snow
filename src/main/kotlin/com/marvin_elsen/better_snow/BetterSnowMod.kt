@@ -93,4 +93,13 @@ fun initBlocks() {
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
+
+    block {
+        identifier(BetterSnowIdentifier("blue_ice_slab"))
+        type(Block.Type.SLAB)
+        settings {
+            copyOf(Blocks.BLUE_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
 }
