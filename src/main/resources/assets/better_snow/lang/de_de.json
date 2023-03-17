@@ -1,5 +1,6 @@
 {
   "block.better_snow.snow_slab": "Schneestufe",
   "block.better_snow.snow_stairs": "Schneetreppe",
+  "block.better_snow.snow_wall": "Schneemauer",
   "itemGroup.better_snow.better_snow": "Besserer Schnee"
 }

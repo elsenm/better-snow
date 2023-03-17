@@ -45,4 +45,14 @@ fun initBlocks() {
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
+
+    block {
+        identifier(BetterSnowIdentifier("snow_wall"))
+        type(Block.Type.WALL)
+        blockState(Blocks.SNOW_BLOCK.defaultState)
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
 }
