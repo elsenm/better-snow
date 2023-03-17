@@ -52,7 +52,7 @@ fun initBlocks() {
         blockState(Blocks.SNOW_BLOCK.defaultState)
         settings {
             material(Material.SNOW_BLOCK)
-            strength(0.3f)
+            strength(0.5f)
             requiresTool()
             sounds(BlockSoundGroup.SNOW)
         }
