@@ -27,7 +27,7 @@ fun initBlocks() {
         identifier(BetterSnowIdentifier("packed_snow_block"))
         settings {
             material(Material.SNOW_BLOCK)
-            strength(0.3f)
+            strength(0.5f)
             requiresTool()
             sounds(BlockSoundGroup.SNOW)
         }
@@ -39,7 +39,7 @@ fun initBlocks() {
         type(Block.Type.SLAB)
         settings {
             material(Material.SNOW_BLOCK)
-            strength(0.3f)
+            strength(0.5f)
             requiresTool()
             sounds(BlockSoundGroup.SNOW)
         }
