@@ -58,6 +58,25 @@ fun initBlocks() {
     }
 
     block {
+        identifier(BetterSnowIdentifier("ice_slab"))
+        type(Block.Type.SLAB)
+        settings {
+            copyOf(Blocks.ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("ice_stairs"))
+        type(Block.Type.STAIRS)
+        blockState(Blocks.ICE.defaultState)
+        settings {
+            copyOf(Blocks.ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
         identifier(BetterSnowIdentifier("packed_ice_slab"))
         type(Block.Type.SLAB)
         settings {
@@ -81,25 +100,6 @@ fun initBlocks() {
         type(Block.Type.WALL)
         settings {
             copyOf(Blocks.PACKED_ICE)
-        }
-        itemGroup(ITEM_GROUP_BETTER_SNOW)
-    }
-
-    block {
-        identifier(BetterSnowIdentifier("ice_slab"))
-        type(Block.Type.SLAB)
-        settings {
-            copyOf(Blocks.ICE)
-        }
-        itemGroup(ITEM_GROUP_BETTER_SNOW)
-    }
-
-    block {
-        identifier(BetterSnowIdentifier("ice_stairs"))
-        type(Block.Type.STAIRS)
-        blockState(Blocks.ICE.defaultState)
-        settings {
-            copyOf(Blocks.ICE)
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
