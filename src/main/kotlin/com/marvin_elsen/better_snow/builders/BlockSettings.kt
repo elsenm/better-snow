@@ -1,6 +1,7 @@
 package com.marvin_elsen.better_snow.builders
 
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
+import net.minecraft.block.AbstractBlock
 import net.minecraft.block.Material
 import net.minecraft.sound.BlockSoundGroup
 
@@ -21,6 +22,10 @@ class BlockSettings {
 
     fun sounds(blockSoundGroup: BlockSoundGroup) {
         settings.sounds(blockSoundGroup)
+    }
+
+    fun copyOf(block: AbstractBlock) {
+        settings = FabricBlockSettings.copyOf(block)
     }
 }
 

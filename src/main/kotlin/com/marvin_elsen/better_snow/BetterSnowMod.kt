@@ -4,11 +4,9 @@ import com.marvin_elsen.better_snow.builders.Block
 import com.marvin_elsen.better_snow.builders.block
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.minecraft.block.Blocks
-import net.minecraft.block.Material
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
-import net.minecraft.sound.BlockSoundGroup
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
@@ -33,10 +31,7 @@ fun initBlocks() {
         identifier(BetterSnowIdentifier("snow_slab"))
         type(Block.Type.SLAB)
         settings {
-            material(Material.SNOW_BLOCK)
-            strength(0.2f)
-            requiresTool()
-            sounds(BlockSoundGroup.SNOW)
+            copyOf(Blocks.SNOW_BLOCK)
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
@@ -46,10 +41,7 @@ fun initBlocks() {
         type(Block.Type.STAIRS)
         blockState(Blocks.SNOW_BLOCK.defaultState)
         settings {
-            material(Material.SNOW_BLOCK)
-            strength(0.2f)
-            requiresTool()
-            sounds(BlockSoundGroup.SNOW)
+            copyOf(Blocks.SNOW_BLOCK)
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
