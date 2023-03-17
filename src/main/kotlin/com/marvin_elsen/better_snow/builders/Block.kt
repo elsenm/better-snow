@@ -13,6 +13,7 @@ class Block {
     lateinit var identifier: Identifier
     lateinit var itemGroup: ItemGroup
     lateinit var settings: FabricBlockSettings
+    var type: Type = Type.NORMAL
 
     fun identifier(identifier: Identifier) {
         this.identifier = identifier
@@ -25,13 +26,26 @@ class Block {
     fun itemGroup(itemGroup: ItemGroup) {
         this.itemGroup = itemGroup
     }
+
+    fun type(type: Type) {
+        this.type = type
+    }
+
+    enum class Type {
+        NORMAL, SLAB, STAIR
+    }
 }
 
 fun block(init: Block.() -> Unit): net.minecraft.block.Block {
     val block = Block()
     block.init()
 
-    val minecraftBlock = net.minecraft.block.Block(block.settings)
+    val minecraftBlock = when (block.type) {
+        Block.Type.NORMAL -> net.minecraft.block.Block(block.settings)
+        Block.Type.SLAB -> net.minecraft.block.SlabBlock(block.settings)
+        Block.Type.STAIR -> TODO()
+    }
+
     val registeredBlock = Registry.register(Registries.BLOCK, block.identifier, minecraftBlock)
     val registeredItem =
         Registry.register(Registries.ITEM, block.identifier, BlockItem(minecraftBlock, FabricItemSettings()))
