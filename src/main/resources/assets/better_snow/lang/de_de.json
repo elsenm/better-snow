@@ -4,5 +4,6 @@
   "block.better_snow.snow_wall": "Schneemauer",
   "block.better_snow.packed_ice_slab": "Packeisstufe",
   "block.better_snow.packed_ice_stairs": "Packeistreppe",
+  "block.better_snow.packed_ice_wall": "Packeismauer",
   "itemGroup.better_snow.better_snow": "Besserer Schnee"
 }

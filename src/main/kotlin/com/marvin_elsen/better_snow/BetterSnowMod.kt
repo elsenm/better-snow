@@ -75,4 +75,13 @@ fun initBlocks() {
         }
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
+
+    block {
+        identifier(BetterSnowIdentifier("packed_ice_wall"))
+        type(Block.Type.WALL)
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
 }
