@@ -7,11 +7,14 @@ import net.minecraft.block.Blocks
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
+import net.minecraft.util.Identifier
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 const val MOD_ID = "better_snow"
 val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
+
+class BetterSnowIdentifier(path: String) : Identifier(MOD_ID, path)
 
 val ITEM_GROUP_BETTER_SNOW: ItemGroup =
     FabricItemGroup.builder(BetterSnowIdentifier("better_snow")).icon { ItemStack(Items.SNOW_BLOCK) }.build()
@@ -22,7 +25,6 @@ fun init() {
 
     initBlocks()
 }
-
 
 fun initBlocks() {
     LOGGER.debug("Initializing blocks")
