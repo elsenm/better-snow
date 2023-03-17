@@ -4,6 +4,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.BlockState
+import net.minecraft.block.SlabBlock
+import net.minecraft.block.StairsBlock
+import net.minecraft.block.WallBlock
 import net.minecraft.item.BlockItem
 import net.minecraft.item.ItemGroup
 import net.minecraft.registry.Registries
@@ -38,7 +41,7 @@ class Block {
     }
 
     enum class Type {
-        NORMAL, SLAB, STAIRS
+        NORMAL, SLAB, STAIRS, WALL
     }
 }
 
@@ -48,8 +51,9 @@ fun block(init: Block.() -> Unit): net.minecraft.block.Block {
 
     val minecraftBlock = when (block.type) {
         Block.Type.NORMAL -> net.minecraft.block.Block(block.settings)
-        Block.Type.SLAB -> net.minecraft.block.SlabBlock(block.settings)
-        Block.Type.STAIRS -> net.minecraft.block.StairsBlock(block.blockState, block.settings)
+        Block.Type.SLAB -> SlabBlock(block.settings)
+        Block.Type.STAIRS -> StairsBlock(block.blockState, block.settings)
+        Block.Type.WALL -> WallBlock(block.settings)
     }
 
     val registeredBlock = Registry.register(Registries.BLOCK, block.identifier, minecraftBlock)
