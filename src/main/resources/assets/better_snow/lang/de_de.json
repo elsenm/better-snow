@@ -1,5 +1,6 @@
 {
   "block.better_snow.packed_snow_block": "Packschnee",
   "block.better_snow.packed_snow_slab": "Packschneestufe",
+  "block.better_snow.packed_snow_stairs": "Packschneetreppe",
   "itemGroup.better_snow.better_snow": "Besserer Schnee"
 }
