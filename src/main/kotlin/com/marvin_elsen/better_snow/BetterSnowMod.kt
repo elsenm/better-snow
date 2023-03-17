@@ -95,6 +95,16 @@ fun initBlocks() {
     }
 
     block {
+        identifier(BetterSnowIdentifier("ice_stairs"))
+        type(Block.Type.STAIRS)
+        blockState(Blocks.ICE.defaultState)
+        settings {
+            copyOf(Blocks.ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
         identifier(BetterSnowIdentifier("blue_ice_slab"))
         type(Block.Type.SLAB)
         settings {
