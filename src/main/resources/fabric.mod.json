@@ -22,6 +22,12 @@
         "adapter": "kotlin",
         "value": "com.marvin_elsen.better_snow.BetterSnowModKt::init"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.marvin_elsen.better_snow.BetterSnowModKt::initClient"
+      }
     ]
   },
   "mixins": [

@@ -2,8 +2,12 @@ package com.marvin_elsen.better_snow
 
 import com.marvin_elsen.better_snow.builders.Block
 import com.marvin_elsen.better_snow.builders.block
+import net.fabricmc.api.EnvType
+import net.fabricmc.api.Environment
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.minecraft.block.Blocks
+import net.minecraft.client.render.RenderLayer
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
@@ -13,6 +17,9 @@ import org.slf4j.LoggerFactory
 
 const val MOD_ID = "better_snow"
 val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
+lateinit var ice_slab: net.minecraft.block.Block
+lateinit var ice_stairs: net.minecraft.block.Block
+lateinit var ice_wall: net.minecraft.block.Block
 
 class BetterSnowIdentifier(path: String) : Identifier(MOD_ID, path)
 
@@ -24,6 +31,13 @@ fun init() {
     LOGGER.info("Initializing Better Snow")
 
     initBlocks()
+}
+@Suppress("unused")
+@Environment(EnvType.CLIENT)
+fun initClient() {
+    BlockRenderLayerMap.INSTANCE.putBlock(ice_slab, RenderLayer.getTranslucent())
+    BlockRenderLayerMap.INSTANCE.putBlock(ice_stairs, RenderLayer.getTranslucent())
+    BlockRenderLayerMap.INSTANCE.putBlock(ice_wall, RenderLayer.getTranslucent())
 }
 
 fun initBlocks() {
@@ -57,7 +71,7 @@ fun initBlocks() {
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
 
-    block {
+    ice_slab = block {
         identifier(BetterSnowIdentifier("ice_slab"))
         type(Block.Type.SLAB)
         settings {
@@ -66,7 +80,7 @@ fun initBlocks() {
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
 
-    block {
+    ice_stairs = block {
         identifier(BetterSnowIdentifier("ice_stairs"))
         type(Block.Type.STAIRS)
         blockState(Blocks.ICE.defaultState)
@@ -76,7 +90,7 @@ fun initBlocks() {
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
 
-    block {
+    ice_wall = block {
         identifier(BetterSnowIdentifier("ice_wall"))
         type(Block.Type.WALL)
         settings {
