@@ -38,7 +38,7 @@ class Block {
     }
 
     enum class Type {
-        NORMAL, SLAB, STAIR
+        NORMAL, SLAB, STAIRS
     }
 }
 
@@ -49,7 +49,7 @@ fun block(init: Block.() -> Unit): net.minecraft.block.Block {
     val minecraftBlock = when (block.type) {
         Block.Type.NORMAL -> net.minecraft.block.Block(block.settings)
         Block.Type.SLAB -> net.minecraft.block.SlabBlock(block.settings)
-        Block.Type.STAIR -> net.minecraft.block.StairsBlock(block.blockState, block.settings)
+        Block.Type.STAIRS -> net.minecraft.block.StairsBlock(block.blockState, block.settings)
     }
 
     val registeredBlock = Registry.register(Registries.BLOCK, block.identifier, minecraftBlock)
