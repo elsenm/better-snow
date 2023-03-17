@@ -4,11 +4,11 @@
   "block.better_snow.snow_wall": "Schneemauer",
   "block.better_snow.ice_slab": "Eisstufe",
   "block.better_snow.ice_stairs": "Eistreppe",
-  "block.better_snow.blue_ice_slab": "Blaueisstufe",
-  "block.better_snow.blue_ice_stairs": "Blaueistreppe",
-  "block.better_snow.blue_ice_wall": "Blaueismauer",
   "block.better_snow.packed_ice_slab": "Packeisstufe",
   "block.better_snow.packed_ice_stairs": "Packeistreppe",
   "block.better_snow.packed_ice_wall": "Packeismauer",
+  "block.better_snow.blue_ice_slab": "Blaueisstufe",
+  "block.better_snow.blue_ice_stairs": "Blaueistreppe",
+  "block.better_snow.blue_ice_wall": "Blaueismauer",
   "itemGroup.better_snow.better_snow": "Besserer Schnee"
 }
