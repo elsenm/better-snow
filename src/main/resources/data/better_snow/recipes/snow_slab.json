@@ -7,11 +7,10 @@
     }
   },
   "pattern": [
-    "##",
     "##"
   ],
   "result": {
-    "count": 1,
-    "item": "better_snow:packed_snow_block"
+    "count": 4,
+    "item": "better_snow:snow_slab"
   }
 }

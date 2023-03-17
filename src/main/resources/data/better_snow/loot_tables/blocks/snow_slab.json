@@ -14,7 +14,7 @@
                   "add": false,
                   "conditions": [
                     {
-                      "block": "better_snow:packed_snow_slab",
+                      "block": "better_snow:snow_slab",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "type": "double"
@@ -40,28 +40,28 @@
                   }
                 }
               ],
-              "name": "better_snow:packed_snow_slab"
+              "name": "better_snow:snow_slab"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
                   "add": false,
-                  "count": 8.0,
+                  "count": 2.0,
                   "function": "minecraft:set_count"
                 },
                 {
                   "add": false,
                   "conditions": [
                     {
-                      "block": "better_snow:packed_snow_slab",
+                      "block": "better_snow:snow_slab",
                       "condition": "minecraft:block_state_property",
                       "properties": {
                         "type": "double"
                       }
                     }
                   ],
-                  "count": 16.0,
+                  "count": 4.0,
                   "function": "minecraft:set_count"
                 },
                 {

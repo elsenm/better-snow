@@ -24,14 +24,14 @@
                   }
                 }
               ],
-              "name": "better_snow:packed_snow_stairs"
+              "name": "better_snow:snow_stairs"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
                   "add": false,
-                  "count": 16.0,
+                  "count": 6.0,
                   "function": "minecraft:set_count"
                 },
                 {

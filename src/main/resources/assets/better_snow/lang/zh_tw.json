@@ -1,6 +1,5 @@
 {
-  "block.better_snow.packed_snow_block": "雪磚",
-  "block.better_snow.packed_snow_slab": "雪半磚",
-  "block.better_snow.packed_snow_stairs": "雪階梯",
+  "block.better_snow.snow_slab": "雪半磚",
+  "block.better_snow.snow_stairs": "雪階梯",
   "itemGroup.better_snow.better_snow": "更好的雪"
 }

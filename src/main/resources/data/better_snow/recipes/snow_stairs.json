@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "better_snow:packed_snow_block"
+      "item": "minecraft:snow_block"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "###"
   ],
   "result": {
-    "count": 6,
-    "item": "better_snow:packed_snow_stairs"
+    "count": 4,
+    "item": "better_snow:snow_stairs"
   }
 }

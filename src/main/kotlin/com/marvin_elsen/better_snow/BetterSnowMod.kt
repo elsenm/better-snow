@@ -30,22 +30,11 @@ fun initBlocks() {
     LOGGER.debug("Initializing blocks")
 
     block {
-        identifier(BetterSnowIdentifier("packed_snow_block"))
-        settings {
-            material(Material.SNOW_BLOCK)
-            strength(0.5f)
-            requiresTool()
-            sounds(BlockSoundGroup.SNOW)
-        }
-        itemGroup(ITEM_GROUP_BETTER_SNOW)
-    }
-
-    block {
-        identifier(BetterSnowIdentifier("packed_snow_slab"))
+        identifier(BetterSnowIdentifier("snow_slab"))
         type(Block.Type.SLAB)
         settings {
             material(Material.SNOW_BLOCK)
-            strength(0.5f)
+            strength(0.2f)
             requiresTool()
             sounds(BlockSoundGroup.SNOW)
         }
@@ -53,12 +42,12 @@ fun initBlocks() {
     }
 
     block {
-        identifier(BetterSnowIdentifier("packed_snow_stairs"))
+        identifier(BetterSnowIdentifier("snow_stairs"))
         type(Block.Type.STAIRS)
         blockState(Blocks.SNOW_BLOCK.defaultState)
         settings {
             material(Material.SNOW_BLOCK)
-            strength(0.5f)
+            strength(0.2f)
             requiresTool()
             sounds(BlockSoundGroup.SNOW)
         }
