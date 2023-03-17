@@ -51,7 +51,6 @@ fun initBlocks() {
     block {
         identifier(BetterSnowIdentifier("snow_wall"))
         type(Block.Type.WALL)
-        blockState(Blocks.SNOW_BLOCK.defaultState)
         settings {
             copyOf(Blocks.SNOW_BLOCK)
         }
