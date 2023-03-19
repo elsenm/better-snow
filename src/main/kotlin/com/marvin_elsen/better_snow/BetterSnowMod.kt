@@ -32,6 +32,7 @@ fun init() {
 
     initBlocks()
 }
+
 @Suppress("unused")
 @Environment(EnvType.CLIENT)
 fun initClient() {
@@ -65,6 +66,14 @@ fun initBlocks() {
     block {
         identifier(BetterSnowIdentifier("snow_wall"))
         type(Block.Type.WALL)
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("snow_bricks"))
         settings {
             copyOf(Blocks.SNOW_BLOCK)
         }
