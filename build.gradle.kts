@@ -68,6 +68,29 @@ modrinth {
 }
 
 tasks {
+    processResources {
+        filesMatching("fabric.mod.json") {
+            expand(
+                mutableMapOf(
+                    "modVersion" to project.version,
+                    "javaVersion" to javaVersion.toString(),
+                    "minecraftVersion" to libs.versions.minecraft.get(),
+                    "fabricLoaderVersion" to libs.versions.fabric.loader.get(),
+                    "fabricApiVersion" to libs.versions.fabric.api.get(),
+                    "fabricLanguageKotlinVersion" to libs.versions.fabric.language.kotlin.get()
+                )
+            )
+        }
+
+        filesMatching("*.mixins.json") {
+            expand(
+                mutableMapOf(
+                    "javaVersion" to javaVersion.toString()
+                )
+            )
+        }
+    }
+
     withType<JavaCompile> {
         options.encoding = "UTF-8"
     }
