@@ -7,6 +7,7 @@ version = "0.0.1+" + libs.versions.minecraft.get()
 val javaVersion = JavaVersion.VERSION_17
 
 plugins {
+    base
     java
     kotlin("jvm") version "1.8.10"
     id("fabric-loom") version "1.1-SNAPSHOT"
