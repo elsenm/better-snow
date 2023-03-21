@@ -137,6 +137,14 @@ fun initBlocks() {
     }
 
     block {
+        identifier(BetterSnowIdentifier("packed_ice_bricks"))
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
         identifier(BetterSnowIdentifier("blue_ice_slab"))
         type(Block.Type.SLAB)
         settings {
