@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "better_snow:block/blue_ice_bricks"
+  }
+}

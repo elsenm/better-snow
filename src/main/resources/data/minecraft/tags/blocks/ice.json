@@ -7,9 +7,17 @@
     "better_snow:packed_ice_stairs",
     "better_snow:packed_ice_wall",
     "better_snow:packed_ice_bricks",
+    "better_snow:packed_ice_brick_slab",
+    "better_snow:packed_ice_brick_stairs",
+    "better_snow:packed_ice_brick_wall",
+    "better_snow:chiseled_packed_ice_bricks",
     "better_snow:blue_ice_slab",
     "better_snow:blue_ice_stairs",
     "better_snow:blue_ice_wall",
-    "better_snow:blue_ice_bricks"
+    "better_snow:blue_ice_bricks",
+    "better_snow:blue_ice_brick_slab",
+    "better_snow:blue_ice_brick_stairs",
+    "better_snow:blue_ice_brick_wall",
+    "better_snow:chiseled_blue_ice_bricks"
   ]
 }

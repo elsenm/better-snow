@@ -1,8 +1,11 @@
 {
   "values": [
     "better_snow:snow_slab",
+    "better_snow:snow_brick_slab",
     "better_snow:ice_slab",
     "better_snow:packed_ice_slab",
-    "better_snow:blue_ice_slab"
+    "better_snow:packed_ice_brick_slab",
+    "better_snow:blue_ice_slab",
+    "better_snow:blue_ice_brick_slab"
   ]
 }

@@ -80,6 +80,42 @@ fun initBlocks() {
         itemGroup(ITEM_GROUP_BETTER_SNOW)
     }
 
+    block {
+        identifier(BetterSnowIdentifier("snow_brick_slab"))
+        type(Block.Type.SLAB)
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("snow_brick_stairs"))
+        type(Block.Type.STAIRS)
+        blockState(Blocks.SNOW_BLOCK.defaultState)
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("snow_brick_wall"))
+        type(Block.Type.WALL)
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("chiseled_snow_bricks"))
+        settings {
+            copyOf(Blocks.SNOW_BLOCK)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
     ice_slab = block {
         identifier(BetterSnowIdentifier("ice_slab"))
         type(Block.Type.SLAB)
@@ -145,6 +181,42 @@ fun initBlocks() {
     }
 
     block {
+        identifier(BetterSnowIdentifier("packed_ice_brick_slab"))
+        type(Block.Type.SLAB)
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("packed_ice_brick_stairs"))
+        type(Block.Type.STAIRS)
+        blockState(Blocks.PACKED_ICE.defaultState)
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("packed_ice_brick_wall"))
+        type(Block.Type.WALL)
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("chiseled_packed_ice_bricks"))
+        settings {
+            copyOf(Blocks.PACKED_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
         identifier(BetterSnowIdentifier("blue_ice_slab"))
         type(Block.Type.SLAB)
         settings {
@@ -174,6 +246,42 @@ fun initBlocks() {
 
     block {
         identifier(BetterSnowIdentifier("blue_ice_bricks"))
+        settings {
+            copyOf(Blocks.BLUE_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("blue_ice_brick_slab"))
+        type(Block.Type.SLAB)
+        settings {
+            copyOf(Blocks.BLUE_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("blue_ice_brick_stairs"))
+        type(Block.Type.STAIRS)
+        blockState(Blocks.BLUE_ICE.defaultState)
+        settings {
+            copyOf(Blocks.BLUE_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("blue_ice_brick_wall"))
+        type(Block.Type.WALL)
+        settings {
+            copyOf(Blocks.BLUE_ICE)
+        }
+        itemGroup(ITEM_GROUP_BETTER_SNOW)
+    }
+
+    block {
+        identifier(BetterSnowIdentifier("chiseled_blue_ice_bricks"))
         settings {
             copyOf(Blocks.BLUE_ICE)
         }

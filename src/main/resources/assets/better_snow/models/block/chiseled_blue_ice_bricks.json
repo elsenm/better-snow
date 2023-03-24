@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "better_snow:block/chiseled_blue_ice_bricks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "better_snow:block/packed_ice_bricks"
+  }
+}
